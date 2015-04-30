@@ -31,7 +31,6 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
 
     /** Google Map object used for all necessary google maps things */
     private GoogleMap mMap;
-    TrackingService tracking;
 
     /** The button in the XML that is used for saving the current route */
     private Button save;
@@ -88,7 +87,6 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
         setUpMapIfNeeded();
 
         tracking = new TrackingService(this);
-<<<<<<< HEAD
         recording = false;
         locations = new ArrayList<>();
 
@@ -101,8 +99,6 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
         load.setOnClickListener(this);
         record.setOnClickListener(this);
         stop.setOnClickListener(this);
-=======
->>>>>>> b3a91ff57faba3aa7b271ae8c1602c3796a09a52
     }
 
     /** The on resume method is called after the activity is back on top of the android stack. */
