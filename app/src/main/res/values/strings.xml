@@ -1,8 +1,15 @@
 <resources>
+    <!-- The default strings created by Android Studio -->
     <string name="app_name">RouteRecorder</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_tracking">TrackingActivity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Strings used for the Button text on the map screen -->
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
 </resources>

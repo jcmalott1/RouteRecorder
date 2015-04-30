@@ -1,4 +1,54 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
-    android:name="com.google.android.gms.maps.SupportMapFragment" />
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="9"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:background="@android:color/black">
+
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/save"
+            android:text="@string/save"
+            android:layout_weight="1"
+        />
+
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/load"
+            android:text="@string/load"
+            android:layout_weight="1"
+        />
+
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/record"
+            android:text="@string/record"
+            android:layout_weight="1"
+        />
+
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/stop"
+            android:text="@string/stop"
+            android:layout_weight="1"
+        />
+    </LinearLayout>
+</LinearLayout>
