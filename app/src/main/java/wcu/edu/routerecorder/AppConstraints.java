@@ -10,6 +10,7 @@ import com.google.android.gms.maps.model.LatLng;
  * @version 4/30/2015
  */
 public class AppConstraints {
+<<<<<<< HEAD
     /** The string containing the name of Cullowhee */
     public static final String CULLOWHEE = "Cullowhee";
 
@@ -37,3 +38,7 @@ public class AppConstraints {
     /** This value holds the width of the Polyline */
     public static final int POLY_WIDTH = 5;
 }
+=======
+    private static final long MIN_DISTANCE_UPDATE = 10;
+}
+>>>>>>> b3a91ff57faba3aa7b271ae8c1602c3796a09a52
