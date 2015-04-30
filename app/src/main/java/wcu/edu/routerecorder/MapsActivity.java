@@ -23,6 +23,7 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
      * Google Map
      */
     private GoogleMap mMap;
+    TrackingService tracking;
 
     /**
      * @param savedInstanceState Most update map data.
@@ -32,6 +33,8 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
+
+        tracking = new TrackingService(this);
     }
 
     /**
