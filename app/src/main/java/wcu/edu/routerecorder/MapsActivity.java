@@ -50,7 +50,7 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
     /** The private instance of the service that monitors a users location */
     private TrackingService tracking;
 
-    /** A boolean variable to keep track of whether or not teh app is recording */
+    /** A boolean variable to keep track of whether or not the app is recording */
     private Boolean recording;
 
     /** The broadcast receiver used to catch the current location from the location service */
@@ -156,7 +156,7 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
         }
 
         if(v == record) {
-
+            recording = true;
         }
 
         if(v == stop) stopRecording();
@@ -189,6 +189,6 @@ public class MapsActivity extends ActionBarActivity implements GoogleMap.OnMarke
 
     /** This method stop recording the user's current location */
     private void stopRecording() {
-
+        recording = false;
     }
 }

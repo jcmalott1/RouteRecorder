@@ -14,8 +14,6 @@ import android.provider.Settings;
 
 import com.google.android.gms.maps.model.LatLng;
 
-import java.security.Provider;
-
 /**
  *
  * @author Johnathon Malott, John Burrell
@@ -91,9 +89,9 @@ public class TrackingService extends Service implements LocationListener {
 
     public void doBroadcast(LatLng userLocation){
         Intent i = new Intent();
-        i.setAction(LOCATION_BROADCAST);
-        i.putExtra(AppConstraints.LAT, userLocation.latitude);
-        i.putExtra(AppConstraints.LNG, userLocation.longitude);
+        i.setAction(AppConstraints.LOCATION_BROADCAST);
+        i.putExtra(AppConstraints.LAT_KEY, userLocation.latitude);
+        i.putExtra(AppConstraints.LNG_KEY, userLocation.longitude);
         sendBroadcast(i);
     }
 
